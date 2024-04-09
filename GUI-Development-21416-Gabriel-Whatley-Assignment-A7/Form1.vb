@@ -13,8 +13,8 @@ Public Class Form1
         Dim file_contents As Array
         Dim file_contents_index As Int16 = 0
 
-        If IO.File.Exists("savings.txt") = True Then ' Check to make sure the savings.txt file exists.
-            file_contents = My.Computer.FileSystem.ReadAllText("savings.txt").Split(Environment.NewLine.ToArray) ' Read the entire file into an array split by newline characters.
+        If IO.File.Exists("D:\savings.txt") = True Then ' Check to make sure the savings.txt file exists.
+            file_contents = My.Computer.FileSystem.ReadAllText("D:\savings.txt").Split(Environment.NewLine.ToArray) ' Read the entire file into an array split by newline characters.
         Else
             MsgBox("Make sure the savings.txt file is in the program directory") ' Warn the user if the savings.txt file is not found.
             Close()
@@ -40,11 +40,12 @@ Public Class Form1
     End Sub
 
     Private Sub btn_display_stats_Click(sender As Object, e As EventArgs) Handles btn_display_stats.Click
-        ' -- Find the month with the highest savings and calculate the average savings of the values pulled from the file --
+        ' -- Find the month with the highest savings and store the index --
         Dim savings_average As Decimal = 0
         Dim highest_savings_index As Int16 = Array.IndexOf(savings_array, savings_array.Max) ' Get the index of the highest savings.
 
-        For Each cost In savings_array 'Add up all of the monhtly costs from the file.
+        '-- Calculate the average savings of the values pulled from the file --
+        For Each cost In savings_array 'Add up all of the monthly costs from the file.
             savings_average += cost
         Next
         savings_average /= savings_array.Length 'Calculate the average savings using the number of months from the file.
