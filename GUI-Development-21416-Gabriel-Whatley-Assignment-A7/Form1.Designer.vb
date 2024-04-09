@@ -44,9 +44,10 @@ Partial Class Form1
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Location = New Point(541, 51)
+        Label1.Font = New Font("Segoe UI", 27.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label1.Location = New Point(438, 21)
         Label1.Name = "Label1"
-        Label1.Size = New Size(88, 30)
+        Label1.Size = New Size(292, 100)
         Label1.TabIndex = 1
         Label1.Text = "Smart Home" & vbCrLf & "Electric Savings"
         Label1.TextAlign = ContentAlignment.TopCenter
@@ -54,7 +55,7 @@ Partial Class Form1
         ' ComboBox1
         ' 
         ComboBox1.FormattingEnabled = True
-        ComboBox1.Location = New Point(538, 134)
+        ComboBox1.Location = New Point(525, 166)
         ComboBox1.Name = "ComboBox1"
         ComboBox1.Size = New Size(121, 23)
         ComboBox1.TabIndex = 2
@@ -62,7 +63,7 @@ Partial Class Form1
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Location = New Point(292, 306)
+        Label2.Location = New Point(337, 297)
         Label2.Name = "Label2"
         Label2.Size = New Size(144, 15)
         Label2.TabIndex = 3
@@ -80,7 +81,7 @@ Partial Class Form1
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Location = New Point(311, 360)
+        Label3.Location = New Point(325, 361)
         Label3.Name = "Label3"
         Label3.Size = New Size(166, 15)
         Label3.TabIndex = 5
@@ -91,9 +92,9 @@ Partial Class Form1
         lbl_largest_savings.AutoSize = True
         lbl_largest_savings.Location = New Point(314, 390)
         lbl_largest_savings.Name = "lbl_largest_savings"
-        lbl_largest_savings.Size = New Size(177, 15)
+        lbl_largest_savings.Size = New Size(225, 15)
         lbl_largest_savings.TabIndex = 6
-        lbl_largest_savings.Text = "had the most significant savings"
+        lbl_largest_savings.Text = "had the most significant monthly savings"
         ' 
         ' Form1
         ' 
