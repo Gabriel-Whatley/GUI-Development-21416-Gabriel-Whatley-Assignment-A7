@@ -16,7 +16,7 @@ Public Class Form1
         If IO.File.Exists("D:\savings.txt") = True Then ' Check to make sure the savings.txt file exists.
             file_contents = My.Computer.FileSystem.ReadAllText("D:\savings.txt").Split(Environment.NewLine.ToArray) ' Read the entire file into an array split by newline characters.
         Else
-            MsgBox("Make sure the savings.txt file is in the program directory") ' Warn the user if the savings.txt file is not found.
+            MsgBox("Make sure the savings.txt file is in the d:\ directory") ' Warn the user if the savings.txt file is not found.
             Close()
         End If
 
