@@ -56,6 +56,7 @@ Partial Class Form1
         ' 
         cb_month.FormattingEnabled = True
         cb_month.Location = New Point(525, 166)
+        cb_month.MaxDropDownItems = 12
         cb_month.Name = "cb_month"
         cb_month.Size = New Size(121, 23)
         cb_month.TabIndex = 2
@@ -64,7 +65,7 @@ Partial Class Form1
         ' 
         lbl_selected_month_savings.AutoSize = True
         lbl_selected_month_savings.Font = New Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        lbl_selected_month_savings.Location = New Point(282, 314)
+        lbl_selected_month_savings.Location = New Point(285, 314)
         lbl_selected_month_savings.Name = "lbl_selected_month_savings"
         lbl_selected_month_savings.Size = New Size(271, 30)
         lbl_selected_month_savings.TabIndex = 3
@@ -75,18 +76,19 @@ Partial Class Form1
         ' btn_display_stats
         ' 
         btn_display_stats.Font = New Font("Segoe UI", 15.75F, FontStyle.Bold)
-        btn_display_stats.Location = New Point(298, 347)
+        btn_display_stats.Location = New Point(301, 347)
         btn_display_stats.Name = "btn_display_stats"
         btn_display_stats.Size = New Size(239, 39)
         btn_display_stats.TabIndex = 4
         btn_display_stats.Text = "Display Statistics"
         btn_display_stats.UseVisualStyleBackColor = True
+        btn_display_stats.Visible = False
         ' 
         ' lbl_average_savings
         ' 
         lbl_average_savings.AutoSize = True
         lbl_average_savings.Font = New Font("Segoe UI", 15.75F, FontStyle.Bold)
-        lbl_average_savings.Location = New Point(262, 389)
+        lbl_average_savings.Location = New Point(265, 389)
         lbl_average_savings.Name = "lbl_average_savings"
         lbl_average_savings.Size = New Size(310, 30)
         lbl_average_savings.TabIndex = 5
@@ -98,7 +100,7 @@ Partial Class Form1
         ' 
         lbl_largest_savings.AutoSize = True
         lbl_largest_savings.Font = New Font("Segoe UI", 15.75F, FontStyle.Bold)
-        lbl_largest_savings.Location = New Point(208, 428)
+        lbl_largest_savings.Location = New Point(211, 438)
         lbl_largest_savings.Name = "lbl_largest_savings"
         lbl_largest_savings.Size = New Size(419, 30)
         lbl_largest_savings.TabIndex = 6
